@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Terraform Init') {
             steps {
-                sh 'rm -rf .terraform .terraform.lock.hcl'  // Clean Terraform cache
+                sh 'rm -rf .terraform .terraform.lock.hcl'  
                 sh 'terraform init'
             }
         }
